@@ -13,7 +13,8 @@ Repository for my capstone project focused on using ML to optimise high-dimensio
 
 ## Non-Technical Summary
 
-This project efficiently finds optimal solutions when testing is expensive and you can't see inside the "black box"—like optimizing medical treatments with limited patient trials or tuning complex systems where each experiment costs time and money. Using intelligent search strategies that learn from past attempts, I developed a system balancing exploration of new possibilities against refining known good options. The approach adapts dynamically based on evidence rather than following rigid rules, directly applicable to hyperparameter tuning, A/B testing, and resource allocation for organizations like Citizens Advice where I volunteer supporting vulnerable populations.
+This project focuses on finding good solutions efficiently when testing is expensive and the system being optimised is a “black box” – for example, improving medical treatments with limited patient trials or tuning complex processes where each experiment costs time and money. By using search strategies that learn from previous results, I built a system that balances exploring new options with improving those that already look promising. The method adapts dynamically in response to the evidence, rather than following rigid rules, and is directly applicable to tasks such as hyperparameter tuning, A/B testing, and resource allocation in organisations like Citizens Advice, where I volunteer supporting vulnerable people.
+
 
 ---
 
