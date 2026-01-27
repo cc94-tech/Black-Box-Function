@@ -69,18 +69,42 @@ $$\text{UCB}(x) = \mu(x) + \beta \cdot \sigma(x)$$
 
 ### Best Function Values Achieved
 
-| Function | Dimension | Best Value | Round Achieved | Strategy Applied |
-|----------|-----------|------------|----------------|------------------|
-| F1 | 1D | [Your F1 value] | Round [X] | Early convergence, low β |
-| F2 | 2D | [Your F2 value] | Round [X] | LHS + exploitation |
-| F3 | 2D | [Your F3 value] | Round [X] | Trust region refinement |
-| F4 | 3D | [Your F4 value] | Round [X] | Balanced exploration |
-| F5 | 4D | [Your F5 value] | Round [X] | Monotonic trend following |
-| F6 | 5D | [Your F6 value] | Round [X] | Sustained exploration |
-| F7 | 6D | [Your F7 value] | Round [X] | Kernel adjustment critical |
-| F8 | 8D | [Your F8 value] | Round [X] | Dimension-aware allocation |
 
-    
+Best Function Values Achieved
+| Function | Dimension | Best Value | Round Achieved | Strategy Applied              |
+|----------|-----------|------------|----------------|--------------------------------|
+| F1       | 2D        | ≈ 0.91     | Round 9        | Early convergence, low β       |
+| F2       | 3D        | ≈ 0.78     | Round 5        | LHS + exploitation             |
+| F3       | 3D        | ≈ 0.79     | Round 7        | Trust-region refinement        |
+| F4       | 4D        | ≈ 0.86     | Round 8        | Balanced exploration           |
+| F5       | 5D        | ≈ 0.71     | Round 6        | Monotonic trend following      |
+| F6       | 5D        | ≈ 0.63     | Round 4        | Sustained exploration          |
+| F7       | 6D        | ≈ 0.60     | Round 7        | Kernel adjustment critical     |
+| F8       | 6D        | ≈ 0.51     | Round 10       | Dimension-aware allocation     |
+
+Overall, lower-dimensional functions converged earlier and benefited from focused exploitation, while higher-dimensional functions required sustained exploration and careful surrogate diagnostics.
+
+⸻
+
+### Key Findings:
+	•	Adaptive β schedules outperformed fixed strategies (~15–20%)
+	•	Fixed high β (3.0): wasted late queries on excessive exploration
+	•	Fixed low β (1.0): premature convergence to local optima
+	•	Adaptive β: maintained balance across rounds
+	•	Dimensionality fundamentally alters optimisation dynamics
+	•	Low-dimensional functions (2D–3D) converged by Rounds 5–6
+	•	High-dimensional functions (5D–6D) required the full budget
+	•	Empirical query efficiency decreased sharply with dimension
+	•	Human oversight caught critical model failures
+	•	F7 kernel lengthscale correction significantly improved outcomes
+	•	Visual GP posterior inspection prevented silent failure modes
+	•	Latin Hypercube Sampling accelerated early learning
+	•	Reduced clustering bias in initial points
+	•	Improved convergence speed by ~2–3 rounds
+
+⸻
+
+### Average Performance:
 	•   Function 1 (2D): Best value ≈ 0.91 (achieved by Round 9)
 	•	Function 2 (3D): Best value ≈ 0.78 (achieved by Round 5)
 	•	Function 3 (3D): Best value ≈ 0.79 (achieved by Round 7, after correcting a false optimum)
@@ -90,7 +114,6 @@ $$\text{UCB}(x) = \mu(x) + \beta \cdot \sigma(x)$$
 	•	Function 7 (6D): Best value ≈ 0.60 (key improvement after lengthscale correction in Round 6)
 	•	Function 8 (6D): Best value ≈ 0.51 (modest gains, high dimensional complexity)
 
-**Average Performance:** [Calculate your average]
 
 ### Key Findings
 
