@@ -295,8 +295,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Contact
 
 **Can Chatan**  
-📧 Email: [your.email@example.com]  
-💼 LinkedIn: [linkedin.com/in/yourprofile]  
+📧 Email: [cancatan@hotmail.com]  
+💼 LinkedIn: [https://www.linkedin.com/in/can-c-3660721a]  
 💻 GitHub: [@cc94-tech](https://github.com/cc94-tech)
 
 **About:**  
