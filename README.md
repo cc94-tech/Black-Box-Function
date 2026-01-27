@@ -80,6 +80,16 @@ $$\text{UCB}(x) = \mu(x) + \beta \cdot \sigma(x)$$
 | F7 | 6D | [Your F7 value] | Round [X] | Kernel adjustment critical |
 | F8 | 8D | [Your F8 value] | Round [X] | Dimension-aware allocation |
 
+    
+	•   Function 1 (2D): Best value ≈ 0.91 (achieved by Round 9)
+	•	Function 2 (3D): Best value ≈ 0.78 (achieved by Round 5)
+	•	Function 3 (3D): Best value ≈ 0.79 (achieved by Round 7, after correcting a false optimum)
+	•	Function 4 (4D): Best value ≈ 0.86 (achieved by Round 8 after a major peak discovery)
+	•	Function 5 (5D): Best value ≈ 0.71 (improved sharply after Round 6)
+	•	Function 6 (5D): Best value ≈ 0.63 (limited improvement, shallow landscape)
+	•	Function 7 (6D): Best value ≈ 0.60 (key improvement after lengthscale correction in Round 6)
+	•	Function 8 (6D): Best value ≈ 0.51 (modest gains, high dimensional complexity)
+
 **Average Performance:** [Calculate your average]
 
 ### Key Findings
