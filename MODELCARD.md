@@ -354,8 +354,3 @@
 - **Version control:** All changes tracked via GitHub commit history
 - **Issue reporting:** Via GitHub Issues in repository for technical questions
 
----
-
-## Citation
-
-If you use this optimization strategy or methodology, please cite:
