@@ -279,38 +279,6 @@ This framework transfers directly to:
 - Larger deployments follow evidence accumulation
 - GP uncertainty = risk assessment for vulnerable populations
 
----
-
-## Visualizations
-
-*[Add your plots here when available]*
-
-**Optimization Trajectories:**
-```
-[Placeholder for optimization_trajectories.png]
-```
-*Best value found vs. round number for all 8 functions*
-
-**β Evolution Strategy:**
-```
-[Placeholder for beta_schedule.png]
-```
-*Adaptive β reduction: lower-D functions transition earlier, higher-D sustain exploration*
-
-**GP Posterior Evolution:**
-```
-[Placeholder for gp_posterior_example.png]
-```
-*GP uncertainty decreases as data accumulates (F3 example)*
-
-**Query Distribution Heatmap:**
-```
-[Placeholder for query_heatmap.png]
-```
-*Spatial distribution showing early exploration, later exploitation clustering*
-
----
-
 ## License
 
 MIT License
